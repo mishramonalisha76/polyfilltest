@@ -21,9 +21,9 @@ function App() {
     });
     console.log(response)
   }
-  useEffect(() => {
-    getUser();
-  });
+  // useEffect(() => {
+  //   getUser();
+  // });
   return (
    
     <div className="App">
@@ -40,8 +40,10 @@ function App() {
         >
           Learn React
         </a>
+        <button onClick={() => getUser()}>Get user</button>
+        <button onClick={() => connect()}>Connect Wallet</button>
       </header>
-      <button onClick={() => connect()}>Connect Wallet</button>
+     
       <Chat
       account = {address!}
       supportAddress = "0x1aA3127b831a33830Ac0fE3ee4B0741d1A4a4E04"
