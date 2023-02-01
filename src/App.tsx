@@ -15,11 +15,11 @@ function App() {
     connector: new InjectedConnector(),
   })
   const getUser = async() =>{
-    const response = await PushApi.user.get({
-      account: address!,
-      env:'staging',
-    });
-    console.log(response)
+    // const response = await PushApi.user.get({
+    //   account: address!,
+    //   env:'staging',
+    // });
+    // console.log(response)
   }
   // useEffect(() => {
   //   getUser();
